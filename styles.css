@@ -23,8 +23,6 @@ header h1{
 }
 
 footer{
-    clear: both;
-    position: relative;
     bottom: 0;
     height: 60px;
     line-height: 50px;
@@ -54,9 +52,13 @@ nav a {
 }
 
 main{
-    margin: 30px;
-    width: 90%;
-    text-align: center;
+    width: 100%;
+    text-align: center ;
+}
+.fotos, .hobbies, .contact {
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 .galeria{
@@ -67,11 +69,30 @@ main{
     float: left;
     box-sizing: border-box;
     height: auto;
-    width: auto;
+    width: 25%;
 }
 
 .img-cont > img{
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 250px;
     object-fit: cover;
+    box-shadow: 2px 5px 10px;
+}
+
+.galeria::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:1024px) {
+    .galeria > .img-cont {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .galeria > .img-cont {
+        width: 50%;
+    }
 }
