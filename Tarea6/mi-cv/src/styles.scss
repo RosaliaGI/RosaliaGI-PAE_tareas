@@ -1,0 +1,59 @@
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans Typewriter';
+    font-size: 15px;
+}
+
+.container {
+    // Estilos de escritorio
+    width: 80%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    // Ajustes para tabletas
+    @media (max-width: $breakpoint-tablet) {
+        width: 95%;
+    }
+
+    // Ajustes para móviles
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+    }
+}
+
+.card {
+    // Estilos de escritorio
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    // Ajustes para tabletas
+    @media (max-width: $breakpoint-tablet) {
+        flex-basis: 48%;
+    }
+
+    // Ajustes para móviles
+    @media (max-width: $breakpoint-mobile) {
+        flex-basis: 100%;
+    }
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}

@@ -1,0 +1,15 @@
+<div class="courses-container">
+    <h2>Cursos y Certificaciones</h2>
+
+    <div class="course-item" *ngFor="let course of coursesData">
+        <div class="image-container">
+            <img [src]="course.image" alt="{{ course.provider }} logo" class="provider-image">
+        </div>
+        <div class="info-container">
+            <h3>{{ course.title }}</h3>
+            <h4>{{ course.provider }}</h4>
+            <p>{{ course.date }}</p>
+            <h4><a [href]="course.url" target="_blank" rel="noopener noreferrer">Link</a></h4>
+        </div>
+    </div>
+</div>
