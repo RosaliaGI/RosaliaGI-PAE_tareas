@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>News!</title>
+</head>
+
+<body>
+
+    <h1>Rosalía's NewsFeed</h1>
+
+    <div id="options">
+        <form id="searchBar" action="/" method="get">
+            <input type="text" name="query" id="query" value="{{query}}">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <a href="/all">Show NewsFeed</a>
+    </div>
+
+
+    {{{body}}}
+</body>
+
+</html>
