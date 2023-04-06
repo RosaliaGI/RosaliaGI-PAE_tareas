@@ -1,0 +1,37 @@
+:host {
+    background-image: url('/assets/images/header1.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: rgb(236, 232, 199);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+#title {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(21, 21, 50, 0.594);
+
+}
+
+a {
+    color: white;
+    /* Establecer el color inicial de los enlaces en blanco */
+    text-decoration: none;
+    /* Eliminar la subrayado predeterminado de los enlaces */
+}
+
+a:visited {
+    color: rgb(160, 170, 236);
+    /* Establecer el color de los enlaces después de hacer clic en ellos */
+}

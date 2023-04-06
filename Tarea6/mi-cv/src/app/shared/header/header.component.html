@@ -1,0 +1,11 @@
+<nav>
+    <div id="title"><h1>Rosalía's Curriculum Vitae</h1></div>
+    <div id="links">
+        <a *ngIf="router.url !== '/'" routerLink="/">Home</a>
+        <a *ngIf="router.url !== '/educacion'" routerLink="/educacion">Education</a>
+        <a *ngIf="router.url !== '/proyectos'" routerLink="/proyectos">Projects</a>
+        <a *ngIf="router.url !== '/cursos'" routerLink="/cursos">Courses and Certifications</a>
+        <a *ngIf="router.url !== '/contacto'" routerLink="/inf-contacto">Contact information</a>
+    </div>
+
+</nav>

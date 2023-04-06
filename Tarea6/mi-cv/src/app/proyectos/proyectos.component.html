@@ -1,0 +1,14 @@
+<div class="projects-container">
+    <h2>Proyectos</h2>
+  
+    <div class="project-item" *ngFor="let project of projectsData">
+      <div class="image-container">
+        <img [src]="project.image" alt="{{ project.name }} screenshot" class="project-image">
+      </div>
+      <div class="info-container">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+  

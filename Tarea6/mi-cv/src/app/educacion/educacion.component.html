@@ -1,0 +1,15 @@
+<div class="education-container">
+    <h2>Educación</h2>
+
+    <div class="education-item" *ngFor="let education of educationData">
+        <div class="logo-container">
+            <img [src]="education.logo" alt="{{ education.institution }} logo" class="institution-logo">
+        </div>
+        <div class="info-container">
+            <h3>{{ education.title }}</h3>
+            <h4><a [href]="education.website" target="_blank" rel="noopener noreferrer">{{ education.institution }}</a></h4>
+            <p>{{ education.startDate }} - {{ education.endDate }}</p>
+            <p>{{ education.description }}</p>
+        </div>
+    </div>
+</div>
